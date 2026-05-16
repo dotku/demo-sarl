@@ -93,6 +93,19 @@ export default async function HomePage({
         </article>
       </section>
 
+      <Link
+        href={`/${locale}/projects/tessera`}
+        className="projects-card"
+        aria-label={dict.projectsTesseraTitle}
+      >
+        <div className="projects-card-label">{dict.projectsLabel}</div>
+        <div className="projects-card-title">
+          {dict.projectsTesseraTitle}
+        </div>
+        <p className="projects-card-desc">{dict.projectsTesseraDesc}</p>
+        <span className="projects-card-cta">{dict.projectsTesseraCta}</span>
+      </Link>
+
       {donateUrl ? (
         <section className="donate" aria-labelledby="donate-heading">
           <h2 id="donate-heading">{dict.donateTitle}</h2>

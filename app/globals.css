@@ -303,6 +303,376 @@ h1 {
   color: var(--fg-muted);
 }
 
+/* ===== Tessera pitch page ===== */
+
+.tessera .back-link {
+  color: var(--fg-muted);
+  font-weight: 500;
+}
+
+.tessera .back-link:hover {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.tessera h1 {
+  font-size: clamp(2.8rem, 9vw, 4.6rem);
+  margin: 18px 0 10px;
+}
+
+.tessera .tagline {
+  font-size: clamp(1.1rem, 2.6vw, 1.4rem);
+  font-weight: 500;
+  color: var(--fg);
+  margin: 0 0 18px;
+  letter-spacing: -0.01em;
+}
+
+.tessera .lede {
+  color: var(--fg-muted);
+  font-size: clamp(0.98rem, 2.2vw, 1.1rem);
+  line-height: 1.6;
+  max-width: 64ch;
+  margin: 0 0 clamp(48px, 8vw, 80px);
+}
+
+.block {
+  margin-bottom: clamp(48px, 8vw, 80px);
+}
+
+.block h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+.block-lede {
+  color: var(--fg-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 64ch;
+  margin: 0 0 24px;
+}
+
+.block-emphasis {
+  margin: 24px 0 0;
+  padding: 16px 20px;
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+.bullet-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media (min-width: 720px) {
+  .bullet-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.bullet {
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.bullet h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  letter-spacing: -0.005em;
+}
+
+.bullet p {
+  margin: 0;
+  color: var(--fg-muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (min-width: 600px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 900px) {
+  .stats-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.stat {
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.stat-value {
+  font-size: clamp(1.6rem, 3.6vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 0.92rem;
+  color: var(--fg);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.stat-cite {
+  font-size: 0.76rem;
+  color: var(--fg-muted);
+  font-style: italic;
+}
+
+.pillars {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+
+.pillars li {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 18px;
+  align-items: start;
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: 14px;
+}
+
+.pillar-num {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  padding-top: 2px;
+}
+
+.pillar-body h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.pillar-body p {
+  margin: 0;
+  color: var(--fg-muted);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.competitors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.competitors li {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: 12px;
+}
+
+@media (min-width: 720px) {
+  .competitors li {
+    grid-template-columns: 220px 1fr;
+    gap: 24px;
+    align-items: baseline;
+  }
+}
+
+.competitors strong {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.competitors span {
+  color: var(--fg-muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.roadmap {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  background: var(--bg-soft);
+}
+
+.roadmap td {
+  padding: 14px 18px;
+  border-top: 1px solid var(--border);
+  font-size: 0.93rem;
+  vertical-align: top;
+}
+
+.roadmap tr:first-child td {
+  border-top: none;
+}
+
+.roadmap-phase {
+  font-weight: 600;
+  color: var(--accent);
+  width: 90px;
+  white-space: nowrap;
+}
+
+.roadmap-target {
+  color: var(--fg);
+}
+
+.roadmap-timing {
+  color: var(--fg-muted);
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .roadmap-timing {
+    text-align: left;
+  }
+}
+
+.stage {
+  border: 1px solid var(--border);
+  background: linear-gradient(135deg, var(--accent-soft), transparent);
+  border-radius: 16px;
+  padding: clamp(22px, 4vw, 32px);
+}
+
+.stage > p {
+  color: var(--fg-muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0 0 18px;
+  max-width: 64ch;
+}
+
+.ask-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 8px;
+}
+
+.ask-list li {
+  position: relative;
+  padding: 10px 14px 10px 32px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.ask-list li::before {
+  content: "→";
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.disclaimer {
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: 14px;
+  padding: clamp(18px, 3vw, 24px);
+}
+
+.disclaimer h2 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-muted);
+  margin: 0 0 10px;
+}
+
+.disclaimer p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+  line-height: 1.6;
+}
+
+.projects-card {
+  display: block;
+  border: 1px solid var(--border);
+  background: var(--bg-soft);
+  border-radius: 16px;
+  padding: clamp(20px, 3vw, 28px);
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: clamp(40px, 7vw, 72px);
+}
+
+.projects-card:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.projects-card-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--fg-muted);
+  margin-bottom: 10px;
+}
+
+.projects-card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+
+.projects-card-desc {
+  color: var(--fg-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.projects-card-cta {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
 footer {
   display: flex;
   flex-direction: column;

@@ -23,6 +23,10 @@ type Dict = {
   equivalentsItems: { country: string; term: string }[];
   usageTitle: string;
   usageItems: string[];
+  projectsLabel: string;
+  projectsTesseraTitle: string;
+  projectsTesseraDesc: string;
+  projectsTesseraCta: string;
   donateTitle: string;
   donateBody: string;
   donateButton: string;
@@ -84,6 +88,11 @@ export const dictionaries: Record<Locale, Dict> = {
       "Design and UX showcases",
       "Internal previews",
     ],
+    projectsLabel: "Concept brief",
+    projectsTesseraTitle: "Tessera — AI-native sustainment for contested operations",
+    projectsTesseraDesc:
+      "An investment-stage concept brief for an AI-native logistics platform purpose-built for U.S. DoD operations in degraded and contested environments.",
+    projectsTesseraCta: "Read the brief →",
     donateTitle: "Support this site",
     donateBody:
       "If demo.sarl has been useful, you can chip in to help cover hosting and domain costs. Any amount is appreciated.",
@@ -143,6 +152,12 @@ export const dictionaries: Record<Locale, Dict> = {
       "Vitrines design et UX",
       "Aperçus internes",
     ],
+    projectsLabel: "Note de concept",
+    projectsTesseraTitle:
+      "Tessera — Soutien logistique IA-natif pour opérations contestées",
+    projectsTesseraDesc:
+      "Note de concept au stade investissement pour une plateforme logistique IA-native destinée aux opérations DoD en environnement dégradé et contesté.",
+    projectsTesseraCta: "Lire la note →",
     donateTitle: "Soutenir ce site",
     donateBody:
       "Si demo.sarl vous a été utile, vous pouvez contribuer aux frais d'hébergement et de domaine. Tout montant est apprécié.",
